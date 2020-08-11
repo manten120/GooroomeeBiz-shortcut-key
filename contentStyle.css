@@ -1,0 +1,4 @@
+.room-right-side {
+  /* 右側ドロワーメニューが映像を覆わないよう調整 */
+  width: 300px !important;
+}

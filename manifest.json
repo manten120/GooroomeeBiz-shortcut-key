@@ -1,0 +1,18 @@
+{
+  "name": "GooroomeeBIZのショートカットキー",
+  "version": "1.0",
+  "description": "Escキーを素早く2回押すと鍵を開閉。映像をダブルクリックでカメラオフ、さらにダブルクリックでカメラ権限与奪。映像を右クリックでマイクオフ、さらに右クリックでマイク権限与奪",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://biz.gooroomee.com/*"],
+      "js": ["jquery-3.5.0.min.js", "contentScript.js"],
+      "css": ["contentStyle.css"]
+    }
+  ],
+  "manifest_version": 2
+}
